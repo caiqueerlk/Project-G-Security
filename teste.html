@@ -1,10 +1,185 @@
-<html>
-    <head>
-        <title>
-            Teste 123
-        </title>
-        <body><h1>
-            teste
-        </h1> </body>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>PROJECT G.CEO</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0b1a2e;
+      color: #e0e6f0;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    main.container {
+      background: linear-gradient(145deg, #1a2742, #141e33);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(10, 30, 60, 0.7);
+      width: 100%;
+      max-width: 400px;
+      padding: 30px 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      box-shadow: 0 6px 18px rgba(255,126,95,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 900;
+      font-size: 36px;
+      color: white;
+      user-select: none;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+    }
+
+    h1.project-name {
+      font-weight: 700;
+      font-size: 1.9rem;
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      color: #feb47b;
+    }
+
+    .team-section {
+      width: 100%;
+    }
+
+    .team-title {
+      color: #ff9a5c;
+      font-weight: 600;
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #feb47b;
+      padding-bottom: 8px;
+      user-select: none;
+    }
+
+    ul.members-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.members-list li {
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      user-select: none;
+      transition: color 0.25s ease;
+    }
+
+    ul.members-list li:last-child {
+      border-bottom: none;
+    }
+
+    ul.members-list li:hover {
+      color: #ff6f3c;
+    }
+
+    button#resumoBtn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #feb47b;
+      border: none;
+      border-radius: 8px;
+      color: #0b1a2e;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button#resumoBtn:hover {
+      background-color: #ff9a5c;
+    }
+
+    #resumoTexto {
+      display: none;
+      margin-top: 15px;
+      text-align: justify;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 400px) {
+      main.container {
+        padding: 25px 20px;
+      }
+      h1.project-name {
+        font-size: 1.6rem;
+      }
+      .team-title {
+        font-size: 1.1rem;
+      }
+      ul.members-list li {
+        font-size: 0.95rem;
+        padding: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-label="Site do projeto PROJECT G.CEO">
+    <div class="logo" aria-label="Logo do projeto PROJECT G.CEO">G.CEO</div>
+    <h1 class="project-name">PROJECT G.CEO</h1>
+    <section class="team-section" aria-labelledby="team-heading">
+      <h2 class="team-title" id="team-heading">Membros do Time</h2>
+      <ul class="members-list">
+        <li>Samuel Joab</li>
+        <li>João Felipe</li>
+        <li>Caíque Santos</li>
+        <li>João Pedro</li>
+        <li>Kauan</li>
+        <li>Daniel</li>
+        <li>Lucas Santos</li>
+        <li>philipe</li>
+        <li>rafael diogo</li>
+      </ul>
+    </section>
+
+    <button id="resumoBtn" onclick="toggleResumo()">Ver Resumo</button>
+    <div id="resumoTexto">
+      <p>O "PROJECT G.CEO – O Gigante Projeto de Segurança Informacional" explora a relevância da proteção de dados no cenário digital atual, abordando seus fundamentos, riscos, mecanismos de defesa e a situação no Brasil. Segurança da informação refere-se ao conjunto de práticas e ferramentas voltadas a impedir acessos indevidos, alterações não autorizadas e perdas de dados. Essa área se sustenta em três princípios fundamentais: confidencialidade (garantir que apenas pessoas autorizadas tenham acesso às informações), integridade (assegurar que os dados permaneçam corretos e inalterados) e disponibilidade (permitir que as informações estejam acessíveis quando necessário).</p>
+      <p>Inicialmente, a segurança era baseada em meios físicos, como o uso de guardas e senhas, e a criptografia era restrita a fins militares. Com o crescimento das ameaças digitais, como ataques de ransomware e phishing, empresas passaram a empregar soluções como antivírus, firewalls e armazenamento em nuvem. Atualmente, esse campo tornou-se mais sofisticado, enfrentando ameaças complexas que até utilizam inteligência artificial, exigindo respostas rápidas e tecnologias de defesa automatizadas.</p>
+      <p>É importante distinguir ameaças de ataques: ameaças representam possíveis riscos ao funcionamento dos sistemas, enquanto ataques são ações concretas que exploram vulnerabilidades. Para minimizar esses riscos, diversos recursos são utilizados, como a criptografia, que transforma dados em códigos para dificultar sua leitura por terceiros; a autenticação, que confirma a identidade de usuários por meio de senhas, biometria ou dispositivos; e o firewall, que atua como um filtro, controlando o que entra e sai das redes com base em regras específicas.</p>
+      <p>No Brasil, o tema vem ganhando destaque com o aumento dos crimes virtuais e a criação de normas importantes, como a Lei Geral de Proteção de Dados (LGPD), que define como empresas devem tratar dados pessoais. A Política Nacional de Segurança da Informação (PNSI), estabelecida pelo Decreto nº 9.637/2018, também traz diretrizes fundamentais para garantir a proteção das informações. Diversas instituições contribuem nesse processo, como o Gabinete de Segurança Institucional (GSI), o Comitê Gestor da Internet no Brasil (CGI.br), a ANATEL e o CERT.br, que coordenam ações para fortalecer a segurança cibernética.</p>
+      <p>Apesar dos avanços, o país ainda enfrenta desafios como a necessidade de maior conscientização da população, investimentos em infraestrutura digital e capacitação profissional. A mensagem central do projeto reforça que a segurança da informação é uma tarefa contínua e que depende da colaboração de todos para garantir um ambiente digital mais seguro.</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleResumo() {
+      const resumo = document.getElementById("resumoTexto");
+      const botao = document.getElementById("resumoBtn");
+
+      if (resumo.style.display === "none" || resumo.style.display === "") {
+        resumo.style.display = "block";
+        botao.textContent = "Ocultar Resumo";
+      } else {
+        resumo.style.display = "none";
+        botao.textContent = "Ver Resumo";
+      }
+    }
+  </script>
+</body>
 </html>
